@@ -1927,12 +1927,6 @@ send_key(msg.sender_user_id_,'   [المبرمج دارك](https://t.me/F6F6FF)'
 return false
 end
 
-if MsgText[1]== "المبرمج تركي" and msg.type == "pv" then
-local inline = {{{text="-المـبـرمج تـركـي اضـغـط هـنـآ ",url="https://t.me/HH22H"}}}
-send_key(msg.sender_user_id_,'   [المبرمج تـركـي](https://t.me/HH22H)' ,nil,inline,msg.id_)
-return false
-end
-
 if MsgText[1]== "المطور كريم" and msg.type == "pv" then
 local inline = {{{text="-المـطـور كـريـم اضـغـط هـنـآ ",url="https://t.me/kareemmrwan1"}}}
 send_key(msg.sender_user_id_,'   [المـطـور كـريـم](https://t.me/kareemmrwan1)' ,nil,inline,msg.id_)
@@ -2876,7 +2870,7 @@ if msg.text=="/start" then
 if msg.SudoBase then
 local text = '- شكراً لك لإستخدام سورس كاستيلو\n- أنت المطور الاساسي هنا\n—————————\n\n- يمكنك الأن التحكم بأوامر البوت عن طريق لوحة التحكم بالبوت\nفقط انقر على الأمر الذي اريده‏'
 local keyboard = {
-{"المبرمج تركي","المبرمج دارك"},
+{"المبرمج دارك"},
 {"المطور كريم"},
 {"ضع اسم للبوت","ضع صوره للترحيب"},
  {"تعطيل التواصل","تفعيل التواصل"},
@@ -4066,8 +4060,7 @@ return
 sendMsg(msg.chat_id_,msg.id_,nnn[math.random(#nnn)]) 
 elseif Text== "كريم" or Text== "كريم" then return  sendMsg(msg.chat_id_,msg.id_,"[مطور سورس كاستيلو↯](https://t.me/kareemmrwan1)")
 elseif Text== "دارك" or Text== "DARK" then return  sendMsg(msg.chat_id_,msg.id_,"[مبرمج سورس سبيد وكيلر و فينوم وكاستيلو↯](https://t.me/F6F6FF)")
-elseif Text== "التركي" or Text== "اخو دارك" then return  sendMsg(msg.chat_id_,msg.id_,"[عم الناس + اخو دارك♥↯](https://t.me/hh22h)")
-elseif Text== "مبرمج السورس" or Text== "مطور السورس" then return  sendMsg(msg.chat_id_,msg.id_,"[تم تطوير وبرمجه السورس من قبل دارك و التركي](https://t.me/ALAFANDY0)")
+elseif Text== "مبرمج السورس" or Text== "مطور السورس" then return  sendMsg(msg.chat_id_,msg.id_,"[تم تطوير وبرمجه السورس من قبل دارك ](https://t.me/F6F6FF)")
 elseif Text== "سورس كاستيلو" or Text== "سورس كاستيلو" then return  sendMsg(msg.chat_id_,msg.id_,"[احسن سورس مصري ↯](https://t.me/ALAFANDY0)")
 elseif Text== "اغاني" or Text== "الاغاني" then return  sendMsg(msg.chat_id_,msg.id_,"[@YTOOTY_BOT + اسم الاغنية]")
 elseif Text== "رفع غبي"  then return sendMsg(msg.chat_id_,msg.id_,"♡ أهلاً عزيزي\n♡ تم رفع الغبي بنجاح↯\n♡ تمت إضافته إلى قائمه الأغبياء\n♡")
